@@ -1,0 +1,104 @@
+.blog-conterner {
+
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+
+    align-items: center;
+    margin-top: 60px;
+
+}
+
+.baslik {
+    align-self: flex-start;
+    margin-left: 20%;
+    margin-bottom: 30px;
+    font-size: 44px;
+}
+
+.blog-content {
+    width: 60%;
+    margin-top: 32px;
+
+}
+
+.blog-content hr {
+    margin-top: 20px;
+    color: #E0E0E0;
+
+}
+
+.blog-content h1 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #21243D;
+}
+
+.blog-content div {
+    display: flex;
+    flex-flow: row;
+    margin-top: 16px;
+}
+
+.blog-content div h5 {
+    font-size: 20px;
+    color: #21243D;
+}
+
+.blog-content div h6 {
+    font-size: 20px;
+    color: #8695A4;
+    margin-left: 20px;
+
+}
+
+.blog-content div h4 {
+    border-right: 1px solid black;
+    margin-left: 20px;
+}
+
+.blog-content p {
+    font-size: 16px;
+    line-height: 23px;
+    color: #21243D;
+    margin-top: 6px;
+}
+
+@media only screen and (max-width:595px) {
+    .blog-content {
+        width: 90%;
+        margin-top: 32px;
+        padding: 20px 15px;
+
+
+    }
+
+    .baslik {
+        align-self: flex-start;
+        margin-left: 7%;
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
+    .blog-content h1 {
+        font-size: 26px;
+
+
+    }
+
+    .blog-content div h5 {
+        font-size: 16px;
+        color: #21243D;
+    }
+
+    .blog-content div h6 {
+        font-size: 16px;
+        color: #8695A4;
+        margin-left: 20px;
+
+    }
+
+
+}
