@@ -10,6 +10,15 @@
        <link rel="stylesheet" href="menu-responsive-genel.css">
 </head>
 <body>
+
+
+    <div class="responsive-menu-conretner" style="margin-top: -65px">
+     <div  class="responsive-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
      <ul class="header-nav">
          <li> <a  href="./index.html">Home</a></li> 
          <li><a style="color:#FF6464"  href="./blog.html">Blog</a></li>
@@ -17,12 +26,7 @@
      
         <li style="margin-right: 30px;"> <a href="#">Contact</a></li>
     </ul>
-
-    <div  class="responsive-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+    
     
 
 
@@ -113,6 +117,13 @@
 
 
 <script src="javaScript.js"></script>
+<script>
+          window.addEventListener('scroll',function(){
+    var header=document.querySelector('.responsive-menu-conretner');
+    header.classList.toggle('sticky',window.scrollY >0);
+
+})
+</script> 
 
 </body>
 </html>

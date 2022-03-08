@@ -9,10 +9,8 @@
 }
 
 body {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+
 
 }
 
@@ -27,6 +25,7 @@ body {
     background-color: #ff9d64;
 
     margin-top: -66px;
+    position: fixed;
 
 
 }
@@ -59,7 +58,35 @@ body {
 
 .responsive-menu {
     display: none;
+    position: fixed;
+
+    z-index: 99;
+    overflow: hidden;
+
 }
+
+.responsive-menu-conretner {
+    width: 100%;
+    height: 50px;
+
+    position: fixed;
+    z-index: 119;
+    display: none;
+
+
+}
+
+.sticky {
+    background-color: #ffffff !important;
+
+    width: 100% !important;
+    height: 50px;
+
+    position: fixed !important;
+    z-index: 119 !important;
+
+}
+
 
 
 
@@ -86,7 +113,7 @@ body {
 
 /*  footer css */
 .end-footer {
-    width: 80%;
+    width: 100%;
     height: 183px;
 
     display: flex;
@@ -168,6 +195,7 @@ body {
 
 @media only screen and (max-width:377px) {
 
+
     .header-banner {
         width: 100%;
         height: 550px;
@@ -238,6 +266,7 @@ body {
 
     .post-conterner {
         flex-flow: column wrap;
+
     }
 
     .post-content {
@@ -309,6 +338,14 @@ body {
 /* 700px olduğunda */
 
 @media only screen and (max-width:700px) {
+
+    .responsive-menu-conretner {
+
+        display: block;
+
+
+    }
+
     .responsive-menu {
         display: block;
 
@@ -361,27 +398,27 @@ body {
     }
 
     .banner-content h1 {
-        font-size: 32px;
+        font-size: 28px;
 
         text-align: center;
         width: 320px;
-        margin-left: 10%;
+        margin-left: 5%;
     }
 
     .banner-content p {
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 400;
         line-height: 23px;
         color: #21243D;
         margin-top: 40px;
         text-align: center;
         width: 320px;
-        margin-left: 10%;
+        margin-left: 3%;
 
     }
 
 
-    .banner-content input {
+    .banner-content .dowland a {
         font-size: 16px;
         font-weight: 500;
         line-height: 23px;
@@ -424,7 +461,7 @@ body {
         margin-bottom: 40px;
     }
 
-    #view-all {
+    .view-all {
         display: none;
     }
 
